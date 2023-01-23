@@ -1,0 +1,125 @@
+.img_logo {
+    width: 160px;
+    height: auto;
+}
+
+
+.header, .navigation_header {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+.header {
+    box-shadow: 1px, 1px, 4px, black;
+    height: 4em;
+    justify-content: space-between;
+    padding: 0 10%;
+    background-color: rgb(223, 218, 218);
+    border-radius: 10px;
+}
+
+.navigation_header {
+    gap: 3em;
+    list-style: none;
+    z-index: 2;
+}
+
+.navigation_header a{
+    text-decoration: none;
+    color:rgb(201, 3, 19);
+    transition: 1s;
+    font-weight: bold;
+}
+
+.btn_icon_header {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .btn_icon_header {
+        display:block;
+    }
+    .navigation_header{
+        position:absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: rgb(223, 218, 218);
+        height: 100%;
+        width: 35vw;
+        padding: 16px;
+        animation-duration: 1s;
+        margin-left:-100vw;
+    }
+}
+
+@keyframes showSidebar {
+    from {margin-left: -100vw;}
+    top {margin-left: -10vw;}
+}
+
+body {
+    color: rgb(0, 0, 0);
+    font-family: 'Lato', sans-serif; 
+    
+}
+
+form {
+    min-width: 280px;
+    max-width: 1000px;
+}
+
+h1 {
+    font-family: 'lato', sans-serif;
+    font-size: 30px;
+    color:#32292F;
+    background-color: rgb(227, 15, 35);
+    border-radius:10px;
+    text-align: center;
+    letter-spacing: 1px;
+    height: 40px;
+    width: 100%;
+    box-shadow: 1px, 1px, 4px, black;
+}
+
+h2 {
+    color:#444444;
+    text-align:justify;
+
+}
+
+.question {
+    padding: 10px;
+    
+}
+
+.range {
+    padding: 10px;
+}
+
+.text_area {
+    padding: 10px;
+}
+
+textarea {
+    margin: 8px 0;
+    padding-left: 1px;
+    width: 100%;
+    height: 120px;
+    border: 1x solid #ccc;
+    position:relative;
+    font-size: 16px;
+    max-width: 800px;
+    color: #444;
+    resize:initial;
+    font-family: 'lato', sans-serif;
+    font-size: 15px;
+}
+
+.submit {
+    text-align: center;
+}

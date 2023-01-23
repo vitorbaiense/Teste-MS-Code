@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/png"
+        href="https://moveissimonetti.vteximg.com.br/arquivos/footer-logo.png?v=637486577847470000">
+    <title>Pesquisa de Satisfação Movéis Simonetti</title>
+
+</head>
+
+<body>
+    <header class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list-nested"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </button>
+
+        <div class="logo_header">
+            <img src="logotipo-móveis-simonetti.png" class="img_logo" alt="logotipo Móveis Simonetti">
+        </div>
+
+        <ul class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <li>
+                <a href="#">Inicio</a>
+            </li>
+            <li>
+                <a class="active" href="https://www.moveissimonetti.com.br/">Produtos</a>
+            </li>
+            <li>
+                <a class="active" href="https://www.moveissimonetti.com.br/institucional/quem-somos">Sobre nós</a>
+            </li>
+            <li>
+                <a class="active" href="#">Contato</a>
+            </li>
+        </ul>
+    </header>
+
+    <div tabindex="0" onclick="closeSideBar()" id="tittles">
+        <h1>Pesquisa de Satisfação Móveis Simonetti</h1>
+        <h2> Nós da Móveis Simonetti gostariamos de conhecer e saber sobre a satisfação dos nossos clientes.<br>
+            Para isto, criamos esta pesquisa abaixo com o objetivo de verificarmos a satisfação em relação a empresa:
+        </h2>
+    </div>
+
+    <form tabindex="0" onclick="closeSideBar()" id="questions">
+        <div class="question">
+            <label for="">Voce está satisfeito com os nossos serviços?</label><br>
+            <input type="radio" name="satisfação" id="Sim"> <label for="Sim">Sim</label> <br>
+            <input type="radio" name="satisfação" id="Não"> <label for="">Não</label> <br>
+        </div>
+
+        <div class="question">
+            <label for="">De modo geral, como você avalia a qualidade do atendimento ao cliente realizado por nossa
+                empresa?</label><br>
+            <input type="radio" name="atendimento" id="iMR"> <label for="iMR">Muito ruim</label><br>
+            <input type="radio" name="atendimento" id="iR"> <label for="iR">Ruim</label><br>
+            <input type="radio" name="atendimento" id="iB"> <label for="iB">Bom</label><br>
+            <input type="radio" name="atendimento" id="iMB"> <label for="iMB">Muito bom</label><br>
+        </div>
+
+        <div class="question">
+            <label for="">Qual o seu grau de satisfação com nossa empresa?</label><br>
+            <input type="radio" name="satisfacao" id="iMI"> <label for="iMI">Muito insatisfeito</label><br>
+            <input type="radio" name="satisfacao" id="iPI"> <label for="iPI">Pouco insatisfeito</label><br>
+            <input type="radio" name="satisfacao" id="iPS"> <label for="iPS">Pouco satisfeito</label><br>
+            <input type="radio" name="satisfacao" id="iMS"> <label for="iMS">Muito satisfeito</label><br>
+        </div>
+
+        <div class="question">
+            <label for="">Qual das seguintes palavras você usaria para descrever nossos produtos e serviços?</label><br>
+            <input type="radio" name="prod.serv" id="iNC"> <label for="iNC">Não confiável</label><br>
+            <input type="radio" name="prod.serv" id="iIn"> <label for="iIn">Ineficaz</label><br>
+            <input type="radio" name="prod.serv" id="iMC"> <label for="iMC">Muito caro</label><br>
+            <input type="radio" name="prod.serv" id="iU"> <label for="iU">Útil</label><br>
+            <input type="radio" name="prod.serv" id="iC"> <label for="iC">Confiável</label><br>
+            <input type="radio" name="prod.serv" id="iAQ"> <label for="iAQ">Alta qualidade</label><br>
+            <input type="radio" name="prod.serv" id="iUn"> <label for="iUn">Único</label><br>
+        </div>
+        
+        <div class="range">
+            <label for="">Gostaríamos de saber qual a possibilidade, em uma escala de 0 a 10, de você indicar os
+                serviços e produtos de nossa empresa para amigos e conhecidos:
+            </label><br><br>
+            <label for="">Não indicaria</label>
+            <input type="range" name="nivel" class="slider" id="inivel" min="0" max="10" value="5" step="1">
+            <label for="">Indicaria totalmente</label><br><br>
+        </div>
+
+        <div class="text_area">
+            <label for="">Por último, conte-nos alguma experiência negativa ou positiva sobre nós, ou então, opine sobre
+                o que podemos melhorar para analisarmos e aperfeiçoarmos nossos atendimentos e outras questões ligadas a
+                nossa empresa:
+            </label><br><br>
+            <textarea name="fala" class="textarea" cols="30" rows="10" ></textarea>
+        </div>
+
+        <div class="submit">
+            <input type="submit" name="enviar" value="enviar">
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
